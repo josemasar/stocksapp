@@ -20,7 +20,7 @@ export const getDailyChartForSymbol = (symbol) => {
         params: {
             function : 'TIME_SERIES_DAILY',
             symbol, 
-            apikey: '1OQ7RJTF331B5VFA'
+            apikey : '1OQ7RJTF331B5VFA'
             }
         }
     )

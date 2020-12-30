@@ -23,7 +23,7 @@ export const getRSIForSymbol = (symbol) => {
             interval : 'weekly',
             time_period : '60',
             series_type : 'open',
-            apikey: '1OQ7RJTF331B5VFA'
+            apikey : '1OQ7RJTF331B5VFA'
             }
         }
     )
