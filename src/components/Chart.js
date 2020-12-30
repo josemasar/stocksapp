@@ -2,18 +2,18 @@ import React, { useState, useEffect } from 'react';
 import getDailyChartForSymbol from './ApiConnector';
 import { CanvasJSChart } from 'canvasjs-react-charts';
 
-const Chart = () => {
+const Chart = (props) => {
 
     const[stockData, setStockData] = useState([]);
-
+    
     useEffect( () => {
         const fetchStockData = async () => {
-          const result = await getDailyChartForSymbol('BIGC');
+          const result = await getDailyChartForSymbol(props.symbol);
           
           setStockData(formatStockData(result.data['Time Series (Daily)']));
         };
         fetchStockData();
-      }, []);
+      }, [props.symbol]);
 
     console.log(stockData);
     

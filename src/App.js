@@ -1,5 +1,6 @@
 import React from 'react';
 import Chart from './components/Chart'
+import ChartRSI from './components/ChartRSI'
 
 const App = () => {
   
@@ -7,8 +8,10 @@ const App = () => {
   return (
     <div>
       <h1>Stocks App </h1> 
-      <Chart/>
-
+      <Chart symbol='TSLA' />
+      <ChartRSI symbol='TSLA' />
+      <Chart symbol='BIGC' />
+      <ChartRSI symbol='BIGC' />
     </div>
    
   )
