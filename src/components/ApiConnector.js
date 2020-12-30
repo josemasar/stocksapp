@@ -1,7 +1,6 @@
 import axios from 'axios'
 import localForage from 'localforage'
 import { setupCache } from 'axios-cache-adapter'
-import apikey from './config'
 
 const cache = setupCache({
     maxAge: 60* 60 * 1000,
@@ -21,7 +20,7 @@ export const getDailyChartForSymbol = (symbol) => {
         params: {
             function : 'TIME_SERIES_DAILY',
             symbol, 
-            apikey
+            apikey : '1OQ7RJTF331B5VFA'
             }
         }
     )

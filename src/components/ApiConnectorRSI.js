@@ -1,7 +1,6 @@
 import axios from 'axios'
 import localForage from 'localforage'
 import { setupCache } from 'axios-cache-adapter'
-import apikey from './config'
 
 const cache = setupCache({
     maxAge: 60* 60 * 1000,
@@ -24,7 +23,7 @@ export const getRSIForSymbol = (symbol) => {
             interval : 'weekly',
             time_period : '60',
             series_type : 'open',
-            apikey
+            apikey : '1OQ7RJTF331B5VFA'
             }
         }
     )
